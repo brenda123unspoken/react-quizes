@@ -1,0 +1,180 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+Skip to content
+Dashboard
+brenda.mukaya@student.moringaschool.com
+Account
+Dashboard
+Courses
+Calendar
+11 unread messages.11
+Inbox
+History
+Help
+SDF-PT06P2QuizzesIntroduction to React Quiz
+Home
+Grades
+Modules
+Student HelpDesk
+Lucid (Whiteboard)
+Introduction to React Quiz
+Due No due date Points 6 Questions 6 Time limit None Allowed attempts 3
+This quiz is no longer available as the course has been concluded.
+Attempt history
+Attempt	Time	Score
+KEPT	Attempt 2	2 minutes	5.5 out of 6
+LATEST	Attempt 2	2 minutes	5.5 out of 6
+Attempt 1	31,279 minutes	1.42 out of 6
+ Answers will be shown after your last attempt
+Score for this attempt: 5.5 out of 6
+Submitted 7 Jun at 9:51
+This attempt took 2 minutes.
+ 
+Question 1
+1 / 1 pts
+Which of the following describe React as a library? Select all that apply.
+  Learn Once, Write Anywhere 
+Nice One! One great thing about React is that it works in a few different environments. Once you learn the key concepts of working with React to create client-side web applications, you can also more easily learnReact NativeLinks to an external site. and write native mobile apps using React, or use tools like Next.jsLinks to an external site. andGatsbyLinks to an external site. to write server-rendered React.
+  I don't know.
+  Declarative 
+Correct!
+
+React helps us write declarative code, which makes our code easier to understand. Declarative code:
+
+Describes what a program should accomplish (or what the end result should be)
+Leaves the determination of how to get to the end result up to the program
+  Component-Based 
+Yes!
+
+React encourages us to structure our applications as "components": the building blocks of our web page that handle their own data and UI logic, that can be "composed" together with other components to put together a complete app.
+
+  A Model-View-Viewmodel Framework 
+Source/s:
+
+What is React?
+ 
+Question 2
+1 / 1 pts
+Of the code examples below, which uses declarative syntax?
+  
+const header = document.createElement("h1");
+header.textContent = "Hi!";
+header.className = "main";
+const container = document.querySelector("#container");
+container.append(header);
+  I don't know.
+  
+const header = <h1 className="main">Hello from React!h1>;
+
+ReactDOM.render(header, document.querySelector("#container"));
+Correct!
+
+With declarative syntax, we are able to leave the determination of how to get to the end result up to the program! Therefore, we don't need to lay out every step that needs to happen, like we do with imperative syntax.
+
+Source/s:
+
+What is React?
+ 
+Question 3
+1 / 1 pts
+Match the term with the correct description.
+Declarative Programming 
+Describes what the end result should be, not the specific actions or steps to get to that result.
+Imperative Programming 
+Explicitly describes the specific actions or steps for getting to the end result.
+Nailed it!
+
+Source/s:
+
+What is React
+ 
+Question 4
+1 / 1 pts
+Which of the following commands will download all the packages listed in apackage.json file?
+  
+$ npm run
+  
+$ npm install
+Correct! We run npm install to download all the packages listed in thepackage.json file, and track which versions were installed.
+  
+$ npm start
+  
+$ npm init
+  I don't know.
+Source/s:
+
+Intro to NPM
+ 
+Question 5
+1 / 1 pts
+___ is a package manager for JavaScript that works with your JavaScript project directories via the command line, allowing you to install packages of preexisting code.
+Npm
+Nailed it!
+Source/s:
+
+Intro to NPM
+ 
+PartialQuestion 6
+0.5 / 1 pts
+Why is React useful for developers? Select all that apply.
+  React has a great set of developer tools that make it easier to view our components in the browser and debug what's happening under the hood.
+  React allows us to create reusable UI components. 
+Correct!
+
+React encourages us to structure our applications as "components": the building blocks of our web page that handle their own data and UI logic, that can be "composed" together with other components to put together a complete app.
+
+  I don't know.
+  React allows us to create applications that can change data, without reloading the page.
+  It works in many different environments allowing developers to build not only web applications, but mobile applications and server-rendered React.
+Nice One!
+
+One great thing about React is that it works in a few different environments. Once you learn the key concepts of working with React to create client-side web applications, you can also more easily learnReact NativeLinks to an external site. and write native mobile apps using React, or use tools like Next.jsLinks to an external site. andGatsbyLinks to an external site. to write server-rendered React.
+
+Source/s:
+
+What is React?
+React Dev ToolsLinks to an external site.
+React NativeLinks to an external site.
+Next.jsLinks to an external site.
+GatsbyLinks to an external site.
+Quiz score: 5.5 out of 6
+Last attempt details:
+Time:	2 minutes
+Current score:	5.5 out of 6
+Kept score:	5.5 out of 6
+2 Attempts so far
+View previous attempts
